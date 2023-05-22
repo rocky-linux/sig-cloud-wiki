@@ -13,6 +13,7 @@ This documentation is a  work in progress and we welcome any and all contributio
 - [RPMS](https://git.rockylinux.org/sig/cloud/rpms)
 - [Patches](https://git.rockylinux.org/sig/cloud/patch)
 - [peridot-config](https://git.rockylinux.org/sig/cloud/peridot-config)
+- [Container images distribution](https://github.com/rocky-linux/sig-cloud-instance-images)
 
 ## Responsibilities
 
@@ -24,15 +25,15 @@ A multitude of images are created as part of the Rocky Linux release process, us
 
 Currently, the following images are produced by the SIG:
 
-* Container rootfs (Base and Minimal variants)
-* GenericCloud
-* EC2 (Amazon AWS)
-* Oracle Cloud Platform
-* Google Cloud Platform (Images are generated [by GCP](https://github.com/GoogleCloudPlatform/compute-image-tools/))
-* Microsoft Azure
-* Vagrant-compatibile images (Libvirt, Virtualbox, VMWare)
-    * NOTE(nhanlon) 2022-10-11: These images are currently a best-effort production until the workflows are automated to create these images.
+- Container rootfs (Base, Minimal, UBI, UBI-init, UBI-micro variants)
+- GenericCloud
+- EC2 (Amazon AWS)
+- Oracle Cloud Platform
+- Google Cloud Platform (Images are generated [by GCP](https://github.com/GoogleCloudPlatform/compute-image-tools/))
+- Microsoft Azure
+- Vagrant-compatibile images (Libvirt, Virtualbox, VMware)
 
+    - NOTE(nhanlon) 2022-10-11: These images are currently a best-effort production until the workflows are automated to create these images.
 
 ### Optimized Kernels
 
@@ -44,12 +45,14 @@ Any and all changes which may benefit ease or performance of usage of Rocky on c
 
 ## Members
 
-* Neil Hanlon
-* Brian Clemens
-* Mustafa Gezen
-* Zach Marano
-* Gregory Kurtzer
-* Dave Linksey
+- Neil Hanlon
+- Brian Clemens
+- Mustafa Gezen
+- Zach Marano
+- Gregory Kurtzer
+- Dave Linksey
+- Lukas Magauer
+- Kyle Ishie
 
 ## Project layout
 
