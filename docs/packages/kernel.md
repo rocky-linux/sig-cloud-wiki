@@ -27,7 +27,9 @@ The RESF primary purpose is to rebuild and debrand a 1:1 bug replica of RHEL and
 
 ## Developer Process
 The general process by the RESF was not initially created with ad-hoc development in mind but rather pulling entire branches from upstream into the current RESF base releases.  The following is to provide a general guide on how to develop with `srpmproc` as the `SIG/CLOUD` dist-git is not to be modified directly for development support.  
-Basic Process
+
+Basic Process:
+
 1. Clone `sig/cloud/patch/kernel` repo
 2. Run Local `srpmproc`
 3. Build local git repo for kernel source
