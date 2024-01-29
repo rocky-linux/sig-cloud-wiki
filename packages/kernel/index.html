@@ -669,15 +669,17 @@
                                                       |-----------|
 </code></pre></div>
 <h2 id="developer-process">Developer Process<a class="headerlink" href="#developer-process" title="Permanent link">&para;</a></h2>
-<p>The general process by the RESF was not initially created with ad-hoc development in mind but rather pulling entire branches from upstream into the current RESF base releases.  The following is to provide a general guide on how to develop with <code>srpmproc</code> as the <code>SIG/CLOUD</code> dist-git is not to be modified directly for development support.<br />
-Basic Process
-1. Clone <code>sig/cloud/patch/kernel</code> repo
-2. Run Local <code>srpmproc</code>
-3. Build local git repo for kernel source
-4. Make Changes, local builds and testing (not covered in doc)
-5. Source changes from local build to <code>sig/cloud/patch/kernel</code>
-6. Regenerate <code>dist-git</code> with srpmproc
-7. Mock test rpm builds.</p>
+<p>The general process by the RESF was not initially created with ad-hoc development in mind but rather pulling entire branches from upstream into the current RESF base releases.  The following is to provide a general guide on how to develop with <code>srpmproc</code> as the <code>SIG/CLOUD</code> dist-git is not to be modified directly for development support.  </p>
+<p>Basic Process:</p>
+<ol>
+<li>Clone <code>sig/cloud/patch/kernel</code> repo</li>
+<li>Run Local <code>srpmproc</code></li>
+<li>Build local git repo for kernel source</li>
+<li>Make Changes, local builds and testing (not covered in doc)</li>
+<li>Source changes from local build to <code>sig/cloud/patch/kernel</code></li>
+<li>Regenerate <code>dist-git</code> with srpmproc</li>
+<li>Mock test rpm builds.</li>
+</ol>
 <p>The following sections are going to be based off real work that was ultimately abandoned for Rocky8.</p>
 <h3 id="prep-for-srpmproc-cloning-patchkernel">Prep for SRPMPROC: Cloning patch/kernel<a class="headerlink" href="#prep-for-srpmproc-cloning-patchkernel" title="Permanent link">&para;</a></h3>
 <p>This is the general prep of the directories used.  Note some directions for <code>srpmproc</code> use a temp directory, that is not used here as depending on how long development can last you could lose important work, specifically around the <code>srpmproc-cache</code></p>
